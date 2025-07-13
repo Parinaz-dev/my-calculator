@@ -159,6 +159,19 @@ color: darkorange;
 }
 
 
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
 /* button {
     width: 35px;
 } */
