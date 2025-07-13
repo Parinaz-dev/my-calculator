@@ -15,7 +15,28 @@ body {
 
 .calculator {
   width: 200px;
+  position: relative;
+    padding: 30px;
+    border: 3px solid #d4b2d8;
+    background-color: #ababa9;
+    border-radius: 7px;
+
 } 
+
+.p-screen {
+position: relative;
+bottom: 17px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#screen {
+    height: 50px;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
 .p-main {
     display: flex;
     align-items: center;
@@ -24,40 +45,59 @@ body {
 }
 .main {
     display: flex;
-    width: 72%;
+    width: 75%;
     flex-direction: column;
     align-items: center;
 }
 .plus {
-    width: 28%;
+    width: 23%;
     display: flex;
     justify-content: flex-end;
 }
 .plus button {
-    width: 35px;
-    height: 68px;
+    width: 46px;
+    height: 117px;
+       border: 0;
+    border-radius: 4px;
+    font-size: 20px;
 }
 .first , .second , .third , .forth , .fifth {
     width: 100%;
 }
 .first button {
-    width: 35px;
+    width: 46px;
+    height: 35px;
+       border: 0;
+    border-radius: 4px;
+    font-size: 20px;
 }
-.first :nth-child(n+2) {
-/* background-color: white; */
+/* .first :nth-child(n+2) {
+ background-color: white; 
 color: darkorange;
-/* border: 0; */
-}
+ border: 0; 
+} */
 
 
 .second button {
-    width: 35px;
+    width: 46px;
+    height: 35px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 25px;
 }
 .third button {
-    width: 35px;
+    width: 46px;
+    height: 35px;
+       border: 0;
+    border-radius: 4px;
+      font-size: 25px;
 }
 .forth button {
-    width: 35px;
+ width: 46px;
+ height: 35px;
+    border: 0;
+    border-radius: 4px;
+      font-size: 25px;
 }
 
 .first , .second , .third , .forth , .fifth {
@@ -70,39 +110,53 @@ color: darkorange;
 
 .fifth :nth-child(1) {
     width: 90px;
-    height: 28px;
+    height: 35px;
+       border: 0;
+    border-radius: 4px;
+      font-size: 25px;
 }
 .fifth :nth-child(2) {
-    height: 25px;
-    width: 35px;
+    width: 46px;
+    height: 35px;
+       border: 0;
+    border-radius: 4px;
 }
 
 
 .fifth :nth-child(3) {
-    background-color: darkorange;
+    /* background-color: darkorange; */
     border: 0;
-    height: 25px;
-    width: 35px;
+    width: 46px;
+    height: 35px;
+       border: 0;
+    border-radius: 4px;
+    font-size: 20px;
 }
 
-#screen {
-    height: 30px;
-    width: 100%;
-}
-.p-screen {
-    margin-bottom: 10px;
-}
+
+
 .p-result {
     margin-top: 10px;
 }
 
 #result {
-    width: 70%;
-     height: 30px;
+    width: 75%;
+     height: 38px;
+        border: 0;
+    border-radius: 4px;
 }
 
 
+.pink-color {
+    background-color: #d4b2d8;
+}
+.p-color {
+    color: #d4b2d8;
+}
 
+.c-white {
+    color: white;
+}
 
 
 /* button {
