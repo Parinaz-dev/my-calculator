@@ -16,7 +16,13 @@
 
         <div class="first">
           <button>C</button>
-          <button class="pink-color c-white" id="divide" style="font-size: 18px">/</button>
+          <button
+            class="pink-color c-white"
+            id="divide"
+            style="font-size: 18px"
+          >
+            /
+          </button>
           <button class="pink-color c-white display" id="multiply">*</button>
           <button class="pink-color c-white display" id="minus">-</button>
         </div>
@@ -69,9 +75,15 @@
     const history = document.getElementById("history");
     const equal = document.getElementById("equal");
     const result = document.getElementById("result");
-    const operators = ["+", "-", "*", "/"];
+    let firstnumber;
+    let secondnumber;
+    let operators;
+    operators = "+" , "-" , "/" , "*";
+    const resultvalue = Number(firstnumber) + Number(secondnumber);
 
-    const reshte = btn.forEach(function (btn) {
+    result.value += resultvalue;
+
+    btn.forEach(function (btn) {
       btn.addEventListener("click", function () {
         screen.value += btn.textContent;
       });
@@ -93,19 +105,17 @@
       screen.value += p.target.textContent;
     });
 
-    result = Number(btn) + Number(btn);
-
     if (operators === "+") {
-      result = Number(btn) + Number(btn);
+      resultvalue = Number(firstnumber) + Number(secondnumber);
     } else if (operators === "-") {
-      reshte = Number(btn) - Number(btn);
+      resultvalue = Number(firstnumber) - Number(secondnumber);
     } else if (operators === "*") {
-      reshte = Number(btn) * Number(btn);
+      resultvalue = Number(firstnumber) * Number(secondnumber);
     } else if (operators === "/") {
-      reshte = Number(btn) / Number(btn);
+      resultvalue = Number(firstnumber) / Number(secondnumber);
     }
 
-    result.value += result;
+    // result.value += result;
 
     // equal.addEventListener("click" , function(e) {
     //   result.value +=
