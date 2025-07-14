@@ -20,6 +20,7 @@ body {
     border: 3px solid #d4b2d8;
     background-color: #ababa9;
     border-radius: 7px;
+    box-shadow: 3px 3px 5px 2px rgb(213, 178, 217);
 
 } 
 
@@ -35,6 +36,7 @@ justify-content: center;
     width: 100%;
     border: 0;
     border-radius: 4px;
+    outline: 0;
 }
 
 .p-main {
@@ -49,14 +51,18 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+.first , .second , .third , .forth {
+    margin-bottom: 5px;
+}
 .plus {
     width: 23%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .plus button {
     width: 46px;
-    height: 117px;
+    height: 110px;
        border: 0;
     border-radius: 4px;
     font-size: 20px;
@@ -71,11 +77,10 @@ justify-content: center;
     border-radius: 4px;
     font-size: 20px;
 }
-/* .first :nth-child(n+2) {
- background-color: white; 
-color: darkorange;
- border: 0; 
-} */
+.first :nth-child(1) {
+     background-color: #1f232e;
+     color: white;
+}
 
 
 .second button {
@@ -104,22 +109,27 @@ color: darkorange;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 
+
 .fifth :nth-child(1) {
-    width: 90px;
+    width: 98px;
     height: 35px;
        border: 0;
     border-radius: 4px;
       font-size: 25px;
+          background-color: #1f232e;
+          color: white;
 }
 .fifth :nth-child(2) {
     width: 46px;
     height: 35px;
        border: 0;
     border-radius: 4px;
+        background-color: #1f232e;
+        color: white;
 }
 
 
@@ -136,7 +146,9 @@ color: darkorange;
 
 
 .p-result {
-    margin-top: 10px;
+
+    position: relative;
+    top: 17px;
 }
 
 #result {
@@ -144,6 +156,7 @@ color: darkorange;
      height: 38px;
         border: 0;
     border-radius: 4px;
+    outline: 0;
 }
 
 
