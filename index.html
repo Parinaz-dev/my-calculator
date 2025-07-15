@@ -77,8 +77,16 @@
     const result = document.getElementById("result");
     let firstnumber;
     let secondnumber;
-    let operators;
-    operators = "+" , "-" , "/" , "*";
+
+    //object 
+    const operators =  {
+      plus : "+",
+      minus : "-",
+      multiply : "*",
+      divide : "/"
+    };
+     
+    
     const resultvalue = Number(firstnumber) + Number(secondnumber);
 
     result.value += resultvalue;
@@ -105,15 +113,15 @@
       screen.value += p.target.textContent;
     });
 
-    if (operators === "+") {
-      resultvalue = Number(firstnumber) + Number(secondnumber);
-    } else if (operators === "-") {
-      resultvalue = Number(firstnumber) - Number(secondnumber);
-    } else if (operators === "*") {
-      resultvalue = Number(firstnumber) * Number(secondnumber);
-    } else if (operators === "/") {
-      resultvalue = Number(firstnumber) / Number(secondnumber);
-    }
+    // if (operators === "+") {
+    //   resultvalue = Number(firstnumber) + Number(secondnumber);
+    // } else if (operators === "-") {
+    //   resultvalue = Number(firstnumber) - Number(secondnumber);
+    // } else if (operators === "*") {
+    //   resultvalue = Number(firstnumber) * Number(secondnumber);
+    // } else if (operators === "/") {
+    //   resultvalue = Number(firstnumber) / Number(secondnumber);
+    // }
 
     // result.value += result;
 
