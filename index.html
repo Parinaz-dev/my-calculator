@@ -75,21 +75,19 @@
     const history = document.getElementById("history");
     const equal = document.getElementById("equal");
     const result = document.getElementById("result");
-    let firstnumber;
-    let secondnumber;
+    // const firstnumber;
+    // const secondnumber;
+    // const currentoperator; با let okeye با const not چرا ؟
 
-    //object 
-    const operators =  {
-      plus : "+",
-      minus : "-",
-      multiply : "*",
-      divide : "/"
-    };
-     
-    
     const resultvalue = Number(firstnumber) + Number(secondnumber);
-
     result.value += resultvalue;
+
+    const operators = {
+      plus: "+",
+      minus: "-",
+      multiply: "*",
+      divide: "/",
+    };
 
     btn.forEach(function (btn) {
       btn.addEventListener("click", function () {
@@ -113,20 +111,26 @@
       screen.value += p.target.textContent;
     });
 
-    // if (operators === "+") {
-    //   resultvalue = Number(firstnumber) + Number(secondnumber);
-    // } else if (operators === "-") {
-    //   resultvalue = Number(firstnumber) - Number(secondnumber);
-    // } else if (operators === "*") {
-    //   resultvalue = Number(firstnumber) * Number(secondnumber);
-    // } else if (operators === "/") {
-    //   resultvalue = Number(firstnumber) / Number(secondnumber);
-    // }
+    plus.addEventListener("click", function () {
+      firstnumber = Number(screen.value);
+      currentoperator = operators.plus;
+      screen.value = "";
+    });
 
-    // result.value += result;
+    equal.addEventListener("click", function () {
+      secondnumber = Number(screen.value);
+    });
 
-    // equal.addEventListener("click" , function(e) {
-    //   result.value +=
-    // });
+    if (currentoperator === "+") {
+      resultvalue = firstnumber + secondnumber;
+    } else if (currentoperator === "-") {
+      resultvalue = firstnumber - secondnumber;
+    } else if (currentoperator === "*") {
+      resultvalue = firstnumber * secondnumber;
+    } else if (currentoperator === "/") {
+      resultvalue = firstnumber / secondnumber;
+    }
+
+    result.value += result;
   </script>
 </html>
