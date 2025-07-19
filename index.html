@@ -75,12 +75,11 @@
     const history = document.getElementById("history");
     const equal = document.getElementById("equal");
     const result = document.getElementById("result");
-    // const firstnumber;
-    // const secondnumber;
-    // const currentoperator; با let okeye با const not چرا ؟
-
-    const resultvalue = Number(firstnumber) + Number(secondnumber);
-    result.value += resultvalue;
+    let firstnumber;
+    let secondnumber;
+    // با let okeye با const not چرا ؟
+    let currentOperator;
+    let resultvalue;
 
     const operators = {
       plus: "+",
@@ -96,7 +95,7 @@
     });
 
     divide.addEventListener("click", function (d) {
-      screen.value += d.target.textContent;
+      screen.value += d.target.textContent.replaceAll(" ", "");
     });
 
     multiply.addEventListener("click", function (m) {
@@ -113,24 +112,42 @@
 
     plus.addEventListener("click", function () {
       firstnumber = Number(screen.value);
-      currentoperator = operators.plus;
-      screen.value = "";
+      currentOperator = operators.plus;
+    });
+
+    divide.addEventListener("click", function () {
+      firstnumber = Number(screen.value);
+      currentOperator = operators.divide;
+    });
+
+    minus.addEventListener("click", function () {
+      firstnumber = Number(screen.value);
+      currentOperator = operators.minus;
+    });
+
+    multiply.addEventListener("click", function () {
+      firstnumber = Number(screen.value);
+      currentOperator = operators.multiply;
     });
 
     equal.addEventListener("click", function () {
       secondnumber = Number(screen.value);
+
+      let parts = screen.value.split(currentOperator);
+      secondnumber = Number(parts[1]);
+
+      if (currentOperator === "+") {
+        resultvalue = firstnumber + secondnumber;
+      } else if (currentOperator === "-") {
+        resultvalue = firstnumber - secondnumber;
+      } else if (currentOperator === "*") {
+        resultvalue = firstnumber * secondnumber;
+      } else if (currentOperator === "/") {
+        resultvalue = firstnumber / secondnumber;
+      }
+      result.value = resultvalue;
+
+      screen.value = "";
     });
-
-    if (currentoperator === "+") {
-      resultvalue = firstnumber + secondnumber;
-    } else if (currentoperator === "-") {
-      resultvalue = firstnumber - secondnumber;
-    } else if (currentoperator === "*") {
-      resultvalue = firstnumber * secondnumber;
-    } else if (currentoperator === "/") {
-      resultvalue = firstnumber / secondnumber;
-    }
-
-    result.value += result;
   </script>
 </html>
