@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 حتما برای ماشین حسابت فونت بذار 
-=======
 // divide.addEventListener("click", function (d) { // screen.value +=
 //d.target.textContent.replaceAll(" ", ""); }); ساختار کدیه غلط باعث فاصله تقسیم میشه که بعدا بررسی کن
 
@@ -18,4 +16,12 @@
       // eval تعریف کن
       // کلید c تعریف کن
       // کلید h تعریف کن
->>>>>>> db983d34bb24612e6fc37ae712c3da24faf272ba
+  // if (currentOperator === "+") {
+            //     resultvalue = firstnumber + secondnumber;
+            // } else if (currentOperator === "-") {
+            //     resultvalue = firstnumber - secondnumber;
+            // } else if (currentoOerator === "*") {
+            //     resultvalue = firstnumber * secondnumber;
+            // } else if (currentOperator === "/") {
+            //     resultvalue = firstnumber / secondnumber;
+            // }
