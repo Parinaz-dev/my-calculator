@@ -6,3 +6,12 @@
 // let divide = firstnumber / secondnumber; 
 // let multiply = firstnumber * secondnumber; 
 // let the = eval(plus, minus, divide, multiply);
+
+
+
+
+
+      // چک کن که عدد دوم هم ریخته شده توی چیزی یا ن
+      // eval تعریف کن
+      // کلید c تعریف کن
+      // کلید h تعریف کن
