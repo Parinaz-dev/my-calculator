@@ -1,1 +1,21 @@
+<<<<<<< HEAD
 حتما برای ماشین حسابت فونت بذار 
+=======
+// divide.addEventListener("click", function (d) { // screen.value +=
+//d.target.textContent.replaceAll(" ", ""); }); ساختار کدیه غلط باعث فاصله تقسیم میشه که بعدا بررسی کن
+
+// let plus = firstnumber + secondnumber;  
+// let minus = firstnumber - secondnumber; 
+// let divide = firstnumber / secondnumber; 
+// let multiply = firstnumber * secondnumber; 
+// let the = eval(plus, minus, divide, multiply);
+
+
+
+
+
+      // چک کن که عدد دوم هم ریخته شده توی چیزی یا ن
+      // eval تعریف کن
+      // کلید c تعریف کن
+      // کلید h تعریف کن
+>>>>>>> db983d34bb24612e6fc37ae712c3da24faf272ba
