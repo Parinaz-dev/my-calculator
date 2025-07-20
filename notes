@@ -1,0 +1,8 @@
+// divide.addEventListener("click", function (d) { // screen.value +=
+//d.target.textContent.replaceAll(" ", ""); }); ساختار کدیه غلط باعث فاصله تقسیم میشه که بعدا بررسی کن
+
+// let plus = firstnumber + secondnumber;  
+// let minus = firstnumber - secondnumber; 
+// let divide = firstnumber / secondnumber; 
+// let multiply = firstnumber * secondnumber; 
+// let the = eval(plus, minus, divide, multiply);
