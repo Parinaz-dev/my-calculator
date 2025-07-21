@@ -65,6 +65,10 @@
         <div class="p-result">
           <input id="result" type="text" />
         </div>
+        <div class="h-text">
+          <div class="text">تو اینا رو انجام داده بودی 😊</div>
+          <div></div>
+        </div>
       </div>
     </div>
 
@@ -90,6 +94,9 @@
         multiply: "*",
         divide: "/",
       };
+      // divide.addEventListener("click", function (d) {
+      //   screen.value += d.target.textContent.replaceAll(" ", "");
+      // });
 
       btn.forEach(function (btn) {
         btn.addEventListener("click", function () {
@@ -98,8 +105,9 @@
       });
 
       divide.addEventListener("click", function (d) {
-        firstnumber = Number(screen.value);
+        firstnumber = Number(screen.value); // چراباید اینجا ذخیره شه ؟
         currentOperator = operators.divide;
+        // screen.value += d.target.textContent.replaceAll(" ", "");
         // screen.value += divide.textContent;
       });
 
@@ -135,9 +143,11 @@
       });
 
       clear.addEventListener("click", function () {
-        screen.value = remove(textContent);
-        resultvalue = remove(textContent);
+        screen.value = "";
+        result.value = "";
       });
+
+      history.addEventListener("click", function () {});
     </script>
   </body>
 </html>
