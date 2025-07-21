@@ -14,23 +14,24 @@ body {
 }
 
 .calculator {
-  width: 200px;
-  position: relative;
-    padding: 30px;
+    width: 200px;
+    position: relative;
+    padding: 50px 30px;
     border: 3px solid #d4b2d8;
     background-color: #ababa9;
     border-radius: 7px;
     box-shadow: 3px 3px 5px 2px rgb(213, 178, 217);
 
-} 
+}
 
 .p-screen {
-position: relative;
-bottom: 17px;
-display: flex;
-align-items: center;
-justify-content: center;
+    position: relative;
+    bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 #screen {
     height: 50px;
     width: 100%;
@@ -45,41 +46,55 @@ justify-content: center;
     justify-content: space-between;
     width: 100%;
 }
+
 .main {
     display: flex;
     width: 75%;
     flex-direction: column;
     align-items: center;
 }
-.first , .second , .third , .forth {
+
+.first,
+.second,
+.third,
+.forth {
     margin-bottom: 5px;
 }
+
 .plus {
     width: 23%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .plus button {
     width: 46px;
     height: 110px;
-       border: 0;
+    border: 0;
     border-radius: 4px;
     font-size: 20px;
 }
-.first , .second , .third , .forth , .fifth {
+
+.first,
+.second,
+.third,
+.forth,
+.fifth {
     width: 100%;
 }
+
 .first button {
     width: 46px;
     height: 35px;
-       border: 0;
+    border: 0;
     border-radius: 4px;
     font-size: 20px;
 }
+
 .first :nth-child(1) {
-     background-color: #1f232e;
-     color: white;
+    background-color: #1f232e;
+    color: white;
 }
 
 
@@ -90,22 +105,28 @@ justify-content: center;
     border-radius: 4px;
     font-size: 25px;
 }
+
 .third button {
     width: 46px;
     height: 35px;
-       border: 0;
-    border-radius: 4px;
-      font-size: 25px;
-}
-.forth button {
- width: 46px;
- height: 35px;
     border: 0;
     border-radius: 4px;
-      font-size: 25px;
+    font-size: 25px;
 }
 
-.first , .second , .third , .forth , .fifth {
+.forth button {
+    width: 46px;
+    height: 35px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.first,
+.second,
+.third,
+.forth,
+.fifth {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,19 +138,20 @@ justify-content: center;
 .fifth :nth-child(1) {
     width: 98px;
     height: 35px;
-       border: 0;
+    border: 0;
     border-radius: 4px;
-      font-size: 25px;
-          background-color: #1f232e;
-          color: white;
+    font-size: 25px;
+    background-color: #1f232e;
+    color: white;
 }
+
 .fifth :nth-child(2) {
     width: 46px;
     height: 35px;
-       border: 0;
+    border: 0;
     border-radius: 4px;
-        background-color: #1f232e;
-        color: white;
+    background-color: #1f232e;
+    color: white;
 }
 
 
@@ -138,12 +160,10 @@ justify-content: center;
     border: 0;
     width: 46px;
     height: 35px;
-       border: 0;
+    border: 0;
     border-radius: 4px;
     font-size: 20px;
 }
-
-
 
 .p-result {
 
@@ -153,16 +173,16 @@ justify-content: center;
 
 #result {
     width: 75%;
-     height: 38px;
-        border: 0;
+    height: 38px;
+    border: 0;
     border-radius: 4px;
     outline: 0;
 }
 
-
 .pink-color {
     background-color: #d4b2d8;
 }
+
 .p-color {
     color: #d4b2d8;
 }
@@ -171,18 +191,16 @@ justify-content: center;
     color: white;
 }
 
-
 .display {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
-
-
-
+#historybox {
+    display: none;
+    height: 100px;
+}
 
 
 /* button {
