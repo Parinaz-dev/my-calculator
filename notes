@@ -1,6 +1,6 @@
 حتما برای ماشین حسابت فونت بذار 
-// divide.addEventListener("click", function (d) { // screen.value +=
-//d.target.textContent.replaceAll(" ", ""); }); ساختار کدیه غلط باعث فاصله تقسیم میشه که بعدا بررسی کن
+divide.addEventListener("click", function (d) {  screen.value +=
+d.target.textContent.replaceAll(" ", ""); }); ساختار کدیه غلط باعث فاصله تقسیم میشه که بعدا بررسی کن
 
 // let plus = firstnumber + secondnumber;  
 // let minus = firstnumber - secondnumber; 
