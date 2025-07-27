@@ -96,9 +96,6 @@
         multiply: "*",
         divide: "/",
       };
-      // divide.addEventListener("click", function (d) {
-      //   screen.value += d.target.textContent.replaceAll(" ", "");
-      // });
 
       btn.forEach(function (btn) {
         btn.addEventListener("click", function () {
@@ -107,7 +104,7 @@
       });
 
       divide.addEventListener("click", function (d) {
-        firstnumber = Number(screen.value); // چراباید اینجا ذخیره شه ؟
+        firstnumber = Number(screen.value);
         currentOperator = operators.divide;
         // screen.value += d.target.textContent.replaceAll(" ", "");
         // screen.value += divide.textContent;
